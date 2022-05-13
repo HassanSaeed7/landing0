@@ -17,10 +17,21 @@ module.exports = {
       "black": "#000000"
     },
     minHeight: {
+      '1/3': '33vh',
       '1/2': '50vh',
       'screen': '100vh'
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        spin: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
+      animation: {
+        'scroll': 'spin 10s linear infinite',
+      }
+    },
   },
   plugins: [],
 }
