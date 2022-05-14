@@ -24,12 +24,15 @@ module.exports = {
     extend: {
       keyframes: {
         spin: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { left: '0' },
+          '100%': { left: '-200%' },
         }
       },
       animation: {
-        'scroll': 'spin 10s linear infinite',
+        'scroll': 'spin 100s linear infinite',
+      },
+      width: {
+        '300%': '300%',
       }
     },
   },
