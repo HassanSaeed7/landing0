@@ -550,16 +550,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
+.w-798 {
+  width: 798px;
+}
+
+.w-300\% {
+  width: 300%;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-1\/12 {
   width: 8.333333%;
-}
-
-.w-300\% {
-  width: 300%;
 }
 
 .max-w-screen-md {
@@ -570,41 +574,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 976px;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.transform-gpu {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 
+@-webkit-keyframes scrolling {
   0% {
-    transform: translateX(0);
     left: 0;
   }
 
   100% {
-    transform: translateX(-100%);
     left: -200%;
   }
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-
+@keyframes scrolling {
   0% {
-    transform: translateX(0);
     left: 0;
   }
 
   100% {
-    transform: translateX(-100%);
     left: -200%;
   }
 }
 
 .animate-scroll {
-  -webkit-animation: spin 100s linear infinite;
-          animation: spin 100s linear infinite;
+  -webkit-animation: scrolling 30s linear infinite;
+          animation: scrolling 30s linear infinite;
 }
 
 .cursor-pointer {
@@ -729,11 +725,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.grayscale {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: rgb(248 195 203 / var(--tw-text-opacity));
@@ -794,5 +785,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 976px) {
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-1440 {
+    width: 1440px;
   }
 }

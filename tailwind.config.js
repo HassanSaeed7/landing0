@@ -23,16 +23,18 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        spin: {
+        scrolling: {
           '0%': { left: '0' },
           '100%': { left: '-200%' },
         }
       },
       animation: {
-        'scroll': 'spin 100s linear infinite',
+        'scroll': 'scrolling 30s linear infinite',
       },
       width: {
         '300%': '300%',
+        '798': '798px',
+        '1440': '1440px'
       }
     },
   },
