@@ -26,10 +26,16 @@ module.exports = {
         scrolling: {
           '0%': { left: '0' },
           '100%': { left: '-200%' },
+        },
+        slide: {
+          
+          '100%': {
+            transform: 'translate3d(-1440px, 0, 0)'
+          }
         }
       },
       animation: {
-        'scroll': 'scrolling 30s linear infinite',
+        'scroll': 'slide 10s linear infinite',
       },
       width: {
         '300%': '300%',

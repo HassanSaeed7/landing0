@@ -578,29 +578,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@-webkit-keyframes scrolling {
-  0% {
-    left: 0;
-  }
-
+@-webkit-keyframes slide {
   100% {
-    left: -200%;
+    transform: translate3d(-1440px, 0, 0);
   }
 }
 
-@keyframes scrolling {
-  0% {
-    left: 0;
-  }
-
+@keyframes slide {
   100% {
-    left: -200%;
+    transform: translate3d(-1440px, 0, 0);
   }
 }
 
 .animate-scroll {
-  -webkit-animation: scrolling 30s linear infinite;
-          animation: scrolling 30s linear infinite;
+  -webkit-animation: slide 10s linear infinite;
+          animation: slide 10s linear infinite;
 }
 
 .cursor-pointer {
